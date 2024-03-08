@@ -23,6 +23,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        env:
+          FONTAWESOME_PACKAGE_TOKEN: ${{ secrets.FONTAWESOME_PACKAGE_TOKEN }}
+
       - name: Build website
         run: npm run build
 
