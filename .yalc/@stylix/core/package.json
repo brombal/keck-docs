@@ -1,0 +1,49 @@
+{
+  "name": "@stylix/core",
+  "version": "4.1.1",
+  "description": "React, with style. Add styles to your React apps with props: the easy, natural, and low learning curve approach.",
+  "keywords": [
+    "react",
+    "styles",
+    "css",
+    "css-in-js",
+    "emotion",
+    "styled-components"
+  ],
+  "type": "module",
+  "module": "./dist/index.js",
+  "types": "./dist/types.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/types.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "npm run clean && rollup -c",
+    "test": "jest",
+    "clean": "rm -rf dist"
+  },
+  "author": "Alex Brombal",
+  "license": "MIT",
+  "homepage": "https://stylix.dev/",
+  "bugs": "https://github.com/brombal/stylix/issues",
+  "repository": "https://github.com/brombal/stylix",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "lint-staged": {
+    "**/*.{md,json}": [
+      "prettier --embedded-language-formatting off --write"
+    ],
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint"
+    ]
+  },
+  "files": [
+    "dist/*",
+    "module.mjs"
+  ],
+  "yalcSig": "c6542ab74811289faa31795f9c686525"
+}
