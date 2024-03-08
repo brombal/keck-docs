@@ -9,12 +9,13 @@ const config: Config = {
   tagline: "Simple observable state ✨🔭 for React and vanilla JS",
   favicon: "img/keck-favicon-32.png",
 
-  url: "https://keck.brombal.io",
+  url: "https://brombal.github.io/keck-docs",
   baseUrl: "/",
+  trailingSlash: false,
 
   // GitHub pages deployment config.
   organizationName: "brombal",
-  projectName: "keck",
+  projectName: "keck-docs",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
