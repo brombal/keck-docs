@@ -1,0 +1,33 @@
+.codeBlock {
+  background: var(--prism-background-color);
+  color: var(--prism-color);
+  margin-bottom: var(--ifm-leading);
+  box-shadow: var(--ifm-global-shadow-lw);
+  border-radius: var(--ifm-global-radius);
+  overflow: hidden;
+}
+
+.codeBlockTitle {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  font-size: var(--ifm-code-font-size);
+  font-weight: 500;
+  padding: 0.75rem var(--ifm-pre-padding);
+}
+
+.codeBlockString {
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.codeBlockResult {
+  border-left: 1px solid var(--ifm-color-emphasis-200);
+  flex: 0 0 auto;
+  width: 50%;
+  background: #f7fafd;
+}
+
+[data-theme="dark"] {
+  .codeBlockResult {
+    background: #0003;
+  }
+}
